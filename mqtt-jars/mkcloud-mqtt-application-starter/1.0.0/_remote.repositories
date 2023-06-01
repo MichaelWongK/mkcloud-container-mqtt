@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 01 15:35:10 CST 2023
+mkcloud-mqtt-application-starter-1.0.0.jar>=
+mkcloud-mqtt-application-starter-1.0.0.pom>=
+mkcloud-mqtt-application-starter-1.0.0-javadoc.jar>=
