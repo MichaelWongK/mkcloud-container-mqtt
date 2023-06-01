@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.mkcloud.mqtt.autoconfiguration.MkcloudMqttOutboundConfiguration,\
+com.mkcloud.mqtt.autoconfiguration.MkcloudMqttInboundConfiguration

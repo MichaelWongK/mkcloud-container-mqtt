@@ -1,0 +1,12 @@
+mkcloud-mqtt-application/target/
+mkcloud-mqtt-application-autoconfigure/target/
+mkcloud-mqtt-example/target/
+mkcloud-mqtt-application-starter/target/
+.idea/ChatGPTCopilotChannelManager.xml
+.idea/encodings.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
+.idea/.gitignore
+.idea/

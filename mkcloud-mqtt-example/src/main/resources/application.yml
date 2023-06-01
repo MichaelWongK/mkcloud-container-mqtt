@@ -1,0 +1,49 @@
+
+mkcloud:
+  application:
+    base-package: com.mkcloud.mqtt
+  mqtt:
+    enabled: true
+    username: amdin
+    password: mingkai13
+    default_qos: 1
+    url: tcp://10.0.12.201:1883
+    default_topic: test-topic
+    clean_session: false
+    keep_alive_interval: 30000
+    connection_timeout: 30000
+    async: false
+    completion_timeout: 3000
+    client_id: test
+    consumer:
+      client_id: ${mkcloud.mqtt.client_id}_consummer
+    producer:
+      client_id: ${mkcloud.mqtt.client_id}_test_producer
+    will:
+      enabled: true
+      topic: mqtt-will
+      qos: 1
+      retained: true
+      payload: ${mkcloud.mqtt.client_id}
+  datasource:
+    temp1:
+      primary: true
+      url: jdbc:mysql://10.0.12.201:3306/test
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: mingkai13
+      initial-size: 1
+      max-active: 20
+      max-wait: 60000
+      min-idle: 3
+      min-evictable-idle-time-millis: 120000
+      time-between-eviction-runs-millis: 60000
+      filters: slf4j
+      filter:
+        slf4j:
+          enabled: true
+server:
+  port: 9999
+spring:
+  main:
+    allow-bean-definition-overriding: true
